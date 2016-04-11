@@ -14,6 +14,11 @@
 		C7AE50151C994F4A009BB94A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AE50131C994F4A009BB94A /* Main.storyboard */; };
 		C7AE50171C994F4A009BB94A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7AE50161C994F4A009BB94A /* Assets.xcassets */; };
 		C7AE501A1C994F4A009BB94A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AE50181C994F4A009BB94A /* LaunchScreen.storyboard */; };
+		C7AE50221C9953D6009BB94A /* LevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C7AE50211C9953D6009BB94A /* LevelScene.sks */; };
+		C7AE50241C9953F8009BB94A /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE50231C9953F8009BB94A /* LevelScene.swift */; };
+		C7AE50261C996131009BB94A /* plop.wav in Resources */ = {isa = PBXBuildFile; fileRef = C7AE50251C996131009BB94A /* plop.wav */; };
+		C7AE50281C99A50B009BB94A /* WonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE50271C99A50B009BB94A /* WonScene.swift */; };
+		C7AE502A1C99A52C009BB94A /* WonScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C7AE50291C99A52C009BB94A /* WonScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		C7AE50161C994F4A009BB94A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7AE50191C994F4A009BB94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7AE501B1C994F4A009BB94A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AE50211C9953D6009BB94A /* LevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelScene.sks; sourceTree = "<group>"; };
+		C7AE50231C9953F8009BB94A /* LevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
+		C7AE50251C996131009BB94A /* plop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = plop.wav; sourceTree = "<group>"; };
+		C7AE50271C99A50B009BB94A /* WonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WonScene.swift; sourceTree = "<group>"; };
+		C7AE50291C99A52C009BB94A /* WonScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WonScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,11 @@
 				C7AE500B1C994F4A009BB94A /* AppDelegate.swift */,
 				C7AE500D1C994F4A009BB94A /* GameScene.sks */,
 				C7AE500F1C994F4A009BB94A /* GameScene.swift */,
+				C7AE50211C9953D6009BB94A /* LevelScene.sks */,
+				C7AE50251C996131009BB94A /* plop.wav */,
+				C7AE50231C9953F8009BB94A /* LevelScene.swift */,
+				C7AE50271C99A50B009BB94A /* WonScene.swift */,
+				C7AE50291C99A52C009BB94A /* WonScene.sks */,
 				C7AE50111C994F4A009BB94A /* GameViewController.swift */,
 				C7AE50131C994F4A009BB94A /* Main.storyboard */,
 				C7AE50161C994F4A009BB94A /* Assets.xcassets */,
@@ -102,6 +117,7 @@
 				TargetAttributes = {
 					C7AE50071C994F4A009BB94A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = YR5A8PB4Q9;
 					};
 				};
 			};
@@ -131,7 +147,10 @@
 				C7AE500E1C994F4A009BB94A /* GameScene.sks in Resources */,
 				C7AE501A1C994F4A009BB94A /* LaunchScreen.storyboard in Resources */,
 				C7AE50171C994F4A009BB94A /* Assets.xcassets in Resources */,
+				C7AE50261C996131009BB94A /* plop.wav in Resources */,
 				C7AE50151C994F4A009BB94A /* Main.storyboard in Resources */,
+				C7AE502A1C99A52C009BB94A /* WonScene.sks in Resources */,
+				C7AE50221C9953D6009BB94A /* LevelScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7AE50101C994F4A009BB94A /* GameScene.swift in Sources */,
+				C7AE50241C9953F8009BB94A /* LevelScene.swift in Sources */,
 				C7AE50121C994F4A009BB94A /* GameViewController.swift in Sources */,
+				C7AE50281C99A50B009BB94A /* WonScene.swift in Sources */,
 				C7AE500C1C994F4A009BB94A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,10 +276,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Plop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = meronlabs.Plop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -266,10 +291,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Plop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = meronlabs.Plop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
